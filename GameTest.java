@@ -43,6 +43,18 @@ public class GameTest extends TestCase
 		      System.out.println(result2);
 		      assertEquals(expResult2, result2);
 		 }
+		public void testCompare() 
+		{
+		     String s4,s5;
+		     s4="2D 3D 4D 5D 6D ";
+		     s5="3D 4D 5D 6D 7f";
+		      Compare instance = new Compare();
+		      String  expResult = "Black";
+		      @SuppressWarnings("static-access")
+			String result = instance.compare(s4,s5);
+		      System.out.print(result);
+		      assertEquals(expResult, result);
+		 }
 		
 	}
 
